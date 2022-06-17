@@ -1,0 +1,84 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 17, 2022 at 05:22 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customers`
+--
+
+CREATE TABLE `customers` (
+  `c_id` int(11) NOT NULL COMMENT 'Customer Id',
+  `c_name` varchar(20) NOT NULL COMMENT 'Customer Name',
+  `acc_no` int(11) NOT NULL COMMENT 'Account Number',
+  `bal` int(11) NOT NULL COMMENT 'Balance'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`c_id`, `c_name`, `acc_no`, `bal`) VALUES
+(103, 'Raj Deshpande', 197743546, 93472),
+(104, 'Aditya Gupta', 190926487, 14090),
+(105, 'Saksham Patil', 198382911, 84642),
+(106, 'Shubham Sharma', 173628713, 90324),
+(107, 'Akhil Sagar', 198718296, 148292),
+(108, 'Akshay Yadav', 193202487, 13465),
+(109, 'Ram Chandravanshi', 198219320, 100010),
+(110, 'Niraj Deshmukh', 193817312, 193732),
+(101, 'Piyush Jadhav', 198762534, 190901),
+(102, 'Aryan Jadhav', 190827342, 1001);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transactions`
+--
+
+CREATE TABLE `transactions` (
+  `t_id` int(11) NOT NULL,
+  `s_name` varchar(20) NOT NULL,
+  `s_acc_no` int(11) NOT NULL,
+  `r_name` varchar(20) NOT NULL,
+  `r_acc_no` int(11) NOT NULL,
+  `amt` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transactions`
+--
+
+INSERT INTO `transactions` (`t_id`, `s_name`, `s_acc_no`, `r_name`, `r_acc_no`, `amt`) VALUES
+(1, 'Aryan Jadhav', 196374526, 'Piyush Jadhav', 198736458, 1000),
+(2, 'Raj Deshpande', 197743546, 'Aditya Gupta', 190926487, 1000),
+(3, 'Raj Deshpande', 197743546, 'Aditya Gupta', 190926487, 1000),
+(4, 'Raj Deshpande', 197743546, 'Aditya Gupta', 190926487, 1000),
+(5, 'Aditya Gupta', 190926487, 'Saksham Patil', 198382911, 1000),
+(6, 'Raj Deshpande', 197743546, 'Aditya Gupta', 190926487, 1000),
+(7, 'Raj Deshpande', 197743546, 'Aditya Gupta', 190926487, 1000);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
