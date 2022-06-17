@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Portfolio Page</title>
+        <script src="https://kit.fontawesome.com/9b79028ac0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navigation">
+            <img class="nav-img" alt="" src="new.png">
+            <div class="links">
+                <a href="#header_div" class="nav-link">Home</a>
+                <a href="all-customers.php" class="nav-link">View All Customers</a>
+                <a href="transfer.php" class="nav-link">Transfer Money</a>
+                <a href="transactions.php" class="nav-link">Transactions</a>
+                <a href="#container" class="navs-link">About Us</a>
+            </div>
+            <a href="#" class="hamenu" onclick="OnSubNav()">
+                <span class="span"></span>
+                <span class="span"></span>
+                <span class="span"></span>
+            </a>
+        </nav>
+        <div class="subnav" id="sub">
+
+            <a href="#contact" class="sub-link" onclick="OnSubNav()">Contact</a>
+            <a href="#projects" class="sub-link" onclick="OnSubNav()">Work</a>
+            <a href="#container" class="sub-link" onclick="OnSubNav()">About</a>
+            <a href="#header_div" class="sub-link" onclick="OnSubNav()">Home</a>
+        </div>
+        <div class="empty" id="e">
+
+        </div>
+        <header class="header" id="header_div">
+            <img src="images/hero-banner.jpg" alt="" class="header-img">
+            <div class="header-text">
+                <p class="header-h1">Sparks Foundation Bank</p>
+                <hr>
+                <p class="header-h2">Leading the Way to the Future</p>
+            </div>
+        </header>
+        <div class="container_div" id="container">
+            <h2 class="container-title">About Us</h2>
+            <div class="container-text">
+                <p>Since the Lincoln administration signed our national bank charter No. 24 in 1863, we’ve drawn on our financial strength to serve customers. This has been especially evident in times of need, such as during the COVID-19 pandemic. Our response by the end of 2020 included a $20 million premium pay program for our employees, relief assistance and 108,000 Small Business Administration Paycheck Protection Program (PPP) loans for our customers, and $30 million in expedited charitable contributions for our communities. As a result, we’re proud to have been named the most essential bank amid the pandemic in a ranking by The Harris Poll.</p>
+                <br>
+                <p>We also recognize that this past year has fundamentally changed banking by accelerating the shift to digital products and services.</p>
+                <button class="container-b">Read More</button> 
+            </div>       
+        </div>
+        <div class="projects_div" id="projects">
+            <h2 class="project-header">Our Services</h2>
+            <div class="project-tile">
+                <button class="option-button" onclick="window.location='all-customers.php';">View All Accounts</button>
+                <button class="option-button" onclick="window.location='transfer.php';">Transfer Money</button>
+                <button class="option-button" onclick="window.location='transactions.php';">Transactions</button>
+
+            </div>
+        </div>
+        <div class="contact_div" id="contact">
+            <h2 class="contact-header">Let's work together...</h2>
+            <div class="contact-links">
+                <img class="contact-img" alt="" src="images/facebook-icon.png">
+                <img class="contact-img" alt="" src="images/twitter-icon.png">
+                <img class="contact-img" alt="" src="images/instagram-icon.png">
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-text">copyright @2020</p>
+        </div>
+    </body>
+</html>

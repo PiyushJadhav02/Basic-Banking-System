@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    margin: 0px;
+    background-color: #f7fbff;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    color:black;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.nav-img{
+    margin:0px 20.31vw 0px 19.53125vw;
+    width: 200px;
+    height:150px;
+}
+
+.nav-items{
+    text-decoration: none;
+    font-size: 17px;
+    color:black;
+    font-family: 'Montserrat';
+    margin-right: 50px;
+}
+
+.nav-options{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+}
+
+.title{
+    margin-top: 200px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30px 30px 30px;
+    column-gap: 34px;
+    row-gap: 50px;
+    padding-top: 100px;
+    color: black;
+    margin-top: 100px;
+    top:150px;
+    background-color: white;
+    height:400px;
+    width: 52.083vw;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    z-index: 2;
+}
+
+.submit{
+    height: 60px;
+    width: 150px;
+    margin: 0px auto 0px 430px;
+    border:2px solid #333333;
+    border-radius:4px;
+    color:#333333;
+    background-color: white;
+    font-size:16px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+input{
+    width:300px;
+}
+
+#result{
+    text-align: center;
+    font-family: "Montserrat";
+    margin-bottom: 100px;
+    color:red;
+}
